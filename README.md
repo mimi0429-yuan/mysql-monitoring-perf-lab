@@ -1,6 +1,7 @@
 # mysql-monitoring-perf-lab
 MySQL监控与性能优化实验环境 (Prometheus + Grafana + Sysbench)
 ##目录结构
+```
 mysql-monitoring-perf-lab/
 ├── README.md
 ├── docker-compose.yml
@@ -42,3 +43,4 @@ mysql-monitoring-perf-lab/
 └── screenshots/
     ├── grafana-before.png  #优化前 Grafana 监控截图
     └── grafana-after.pngjeis  #优化后 Grafana 监控截图
+```
