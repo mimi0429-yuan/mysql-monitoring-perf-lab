@@ -1,0 +1,22 @@
+services:
+  mysql:
+    image: mysql:8.0.40
+    container_name: mysql8
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: Root@2026strong
+      MYSQL_DATABASE: ecommerce_test
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql8-data:/var/lib/mysql
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --default-time-zone=+08:00
+      - --innodb-buffer-pool-size=2G
+      - --innodb-flush-log-at-trx-commit=2
+
+volumes:
+  mysql8-data:
